@@ -187,7 +187,7 @@ describe('server.js', () => {
         expect(res.body).toMatchObject({
           task_description: 'Do foo',
           task_notes: null,
-          task_completed: false,
+          task_completed: true,
         })
       }, 750)
       test('[15] rejects a task lacking a task_description with an error status code', async () => {
